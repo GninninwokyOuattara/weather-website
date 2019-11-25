@@ -10,8 +10,20 @@
 </head>
 
 <body>
-    <h1>{{title}}</h1>
-    {{>header}}
+    <div class="main-content">
+        <h1>{{title}}</h1>
+        <header>
+            {{>header}}
+        </header>
+        <div class="about-content">
+            <h3>Project done with Node.js</h3>
+            <p>A web application allowing users to quickly get weather information of any location</p>
+            <h4>API used for this Project</h4>
+            <p><strong>Darksky</strong> and <strong>Mapbox</strong></p>
+        </div>
+    </div>
+
+
 </body>
 
 </html>

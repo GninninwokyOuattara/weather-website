@@ -87,3 +87,19 @@ footer {
   font-family: monospace;
   color: antiquewhite;
 }
+
+.about-content {
+  padding-top: 15px;
+  text-align: center;
+  color: rgb(43, 42, 38);
+
+}
+
+.about-content h3,
+.about-content h4 {
+  font-family: fantasy;
+}
+
+h4 {
+  margin-top: 50px;
+}
