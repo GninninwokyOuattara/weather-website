@@ -1,0 +1,89 @@
+* {
+  margin-top: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+
+body {
+  /* background-color: rgb(228, 228, 228); */
+  background-image: url("../img/tcw-wallpaper-02.jpg");
+  background-repeat: no-repeat;
+}
+
+.main-content {
+  margin: 10px 10px;
+  padding: 20px;
+  height: 100%;
+}
+
+h1 {
+  font-size: 100px;
+  text-align: center;
+  color: rgb(243, 201, 146);
+}
+
+header {
+  margin: 20px 0px;
+  padding: 20px 0px;
+  text-align: center;
+}
+
+header a {
+  padding: 20px;
+  text-decoration: none;
+  background-color: aliceblue;
+  color: black;
+  border-radius: 15px;
+}
+
+a:hover {
+  background-color: rgb(180, 220, 255);
+}
+
+.weather-content {
+  text-align: center;
+}
+
+.weather-content input {
+  margin: 20px 0px;
+  text-align: center;
+  width: 25%;
+  height: 30px;
+  border-radius: 12px;
+  border-color: darksalmon;
+  /* display: block; */
+}
+
+.weather-content button {
+  width: 100px;
+  height: 30px;
+  border-radius: 12px;
+  background-color: darksalmon;
+  text-align: center;
+}
+
+.weather-content button:hover {
+  background-color: rgb(250, 138, 101);
+}
+
+.weather-results {
+  padding: 20px;
+  text-align: center;
+  color: gold;
+}
+
+#query-state {
+  font-family: fantasy;
+  font-size: x-large;
+}
+
+#query-result {
+  font-family: cursive;
+  font-size: 20px;
+}
+
+footer {
+  text-align: center;
+  font-family: monospace;
+  color: antiquewhite;
+}
