@@ -9,7 +9,7 @@ console.log("App started");
 //   });
 // });
 
-const searchQuery = "http://127.0.0.1:8080/weather?address=";
+const searchQuery = "/weather?address=";
 const weatherForm = document.querySelector("form");
 const searchLocation = document.querySelector("input");
 const state = document.querySelector("#query-state");

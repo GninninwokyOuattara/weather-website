@@ -6,6 +6,8 @@ const forecast = require("./utils/forecast");
 const geocode = require("./utils/geocode");
 
 const app = express();
+//Heroku provide a port number or the port will be 3000 locally
+const port = process.env.PORT || 3000;
 const publicDirectoryPath = path.join(__dirname, "../public");
 const templatesPath = path.join(__dirname, "../templates");
 const viewsPath = path.join(__dirname, "../templates/views");
@@ -78,4 +80,4 @@ app.get("*", (req, res) => {
     errorMessage: "Page not found"
   });
 });
-app.listen(8080);
+app.listen(port);
