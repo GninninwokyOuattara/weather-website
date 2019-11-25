@@ -15,6 +15,8 @@ const forecast = ({ latitude, longitude }, callback) => {
       callback("Unable to access this location information, try another.");
     } else {
       callback(undefined, {
+        dailySummary: body.daily.summary,
+        currentlySummary: body.currently.summary,
         temperature: body.currently.temperature,
         precipProbability: body.currently.precipProbability,
         currently: body.currently.icon,

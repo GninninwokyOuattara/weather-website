@@ -60,8 +60,16 @@ app.get("/weather", (req, res) => {
         }
 
         const { placeName } = data;
-        const { temperature, precipProbability, currently } = dataForecast;
+        const {
+          temperature,
+          precipProbability,
+          currently,
+          dailySummary,
+          currentlySummary
+        } = dataForecast;
         return res.send({
+          dailySummary: dailySummary,
+          currentlySummary: currentlySummary,
           address: req.query.address,
           placeName: placeName,
           currently: currently,

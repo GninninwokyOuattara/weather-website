@@ -25,6 +25,7 @@ weatherForm.addEventListener("submit", e => {
   state.textContent = "Fetching weather ...";
   let query = searchQuery + location;
   //console.log("Fetching : " + query);
+  debugger;
   fetch(query).then(response => {
     response.json().then(data => {
       state.textContent = "";
@@ -35,8 +36,7 @@ weatherForm.addEventListener("submit", e => {
       }
       state.textContent = data.placeName;
       result.textContent =
-        "It is currently " +
-        data.currently +
+        data.currentlySummary +
         " with a temperature of " +
         data.temperature +
         " degrees and " +
